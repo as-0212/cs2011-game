@@ -18,10 +18,13 @@ public class Game extends GameMethods {
 
         if (isKnight) {
             System.out.println("You have chosen The Knight.");
+            Knight.runKnightStory();
         } else if (isArcher) {
             System.out.println("You have chosen The Archer!");
+            Archer.runArcherStory();
         } else if (isMage) {
             System.out.println("You have chosen The Mage!");
+            Mage.runMageStory();
         }
         
         input.close();
