@@ -1,6 +1,6 @@
 public class Game extends GameMethods {
     public static void main(String[] args) {
-        while (true) {
+        while (true) { //While loop to continue asking the user to choose their class, validates their choice.
             classValidator();
 
             if (userChoice == 1) {
@@ -16,6 +16,7 @@ public class Game extends GameMethods {
             }
         }
 
+        //If statement below confirms user's choice and will run the corresponding story path.
         if (isKnight) {
             System.out.println("You have chosen The Knight.");
             Knight.runKnightStory();
