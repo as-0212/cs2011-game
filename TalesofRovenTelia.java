@@ -479,11 +479,128 @@ public class TalesofRovenTelia {
 
         hp = 80;
 
+        numHealthPotions = 1;
+
+        System.out.println("");
+        System.out.println("After hearing about an incredible bounty in the tavern, your instincts tell you to go claim it.");
+        System.out.println("It sounded simple, slay something in the ruins of Poachers Peak and earn enough gold to last generations.");
+        System.out.println("But as an overambitious archer, the thought of glory and fame clouds your judgment.");
+        System.out.println("With dreams of the treasure and perhaps the princess, you ready yourself with your bow, quiver, and dagger and storm off into the woods.");
+
+    // First Encounter: Giant Spider and 5 mini spiders
+        System.out.println("");
+        System.out.println("You wander through the forest, climbing trees and scouting from above.");
+        System.out.println("Suddenly, a giant spider startles you atop a branch, causing you to tumble down.");
+        System.out.println("The spider has the high ground and five baby spiders crawl toward you from below.");
         fightCard();
-
-        monsterIntro(3, "Goblins", 18);
-
+        System.out.println("");
+        System.out.println(" #^^#");
+        System.out.println("#\\../#");
+        System.out.println("--()--");
+        System.out.println("#/()\\#");
+        System.out.println("  ## ");
+        System.out.println("");
+        monsterIntro(1, "Giant Spider", 10);
         archerFightSequence();
+
+    for (int i = 1; i <= 5; i++) {
+        System.out.println("");
+        System.out.println(" \\../");
+        System.out.println("--()--");
+        System.out.println(" /  \\");
+        System.out.println("");
+        System.out.println("A Baby Spider crawls toward you!");
+        monsterIntro(1, "Baby Spider", 1);
+        archerFightSequence();
+    }
+
+    // Second Encounter: 3 Orc Warriors
+        System.out.println("");
+        
+        System.out.println("You don’t even loot the spider corpse…the sight made your skin crawl.");
+        System.out.println("Hoping for less arachnid encounters, you take the lower ground this time.");
+        System.out.println("But you stumble right into an orc camp.");
+        System.out.println("Three towering Orc Warriors glare at you, weapons in hand.");
+        System.out.println("^\\/^ ");
+        System.out.println(" .. ");
+        System.out.println("(  ) ");
+        System.out.println("V^^V");
+        System.out.println("");
+        fightCard();
+        System.out.println("");
+    for (int i = 1; i <= 3; i++) {
+        System.out.println("An Orc Warrior charges!");
+        monsterIntro(1, "Orc Warrior", 8);
+        archerFightSequence();
+    }
+
+    // Third Encounter: Bandits and ICE Skeletons
+        
+        System.out.println("You loot the orcs' camp. Food isn't appealing, but gold and arrows are.");
+        System.out.println("You debate resting here, but the thought of losing the bounty to someone else drives you forward.");
+        System.out.println("At the entrance to Poachers Peak, you're ambushed!");
+        System.out.println("Two bandits leap from the shadows, but then, the earth splits and ICE skeleton warriors emerge!");
+        System.out.println("");
+        System.out.println(" V  *  )");
+        System.out.println(" 0  | )  ");
+        System.out.println(" |< +");
+        System.out.println("/ \\");
+        System.out.println("");
+        fightCard();
+        System.out.println("");
+    for (int i = 1; i <= 2; i++) {
+        System.out.println("A Bandit lunges at you!");
+        monsterIntro(1, "Bandit", 5);
+        archerFightSequence();
+    }
+
+    for (int i = 1; i <= 2; i++) {
+        System.out.println("");
+        System.out.println(" __ ");
+        System.out.println("(XX) ");
+        System.out.println(" || ");
+        System.out.println(" == ");
+        System.out.println("");
+        System.out.println("An ICE Skeleton Warrior raises its rusty blade.");
+        monsterIntro(1, "ICE Skeleton Warrior", 3);
+        archerFightSequence();
+    }
+
+    // Dragon Encounter
+        System.out.println("");
+        System.out.println("You catch your breath and loot whatever you can—bones, coins, and scraps of gear.");
+        System.out.println("But then a thunderous gust of wind nearly knocks you over.");
+        System.out.println("A shadow engulfs the ruins. A dragon descends.");
+        System.out.println("This must be the bounty target. You count your arrows and draw your bow.");
+        System.out.println("");
+        System.out.println("  \\/ ");
+        System.out.println(" \\00/ ");
+        System.out.println("  ||");
+        System.out.println("/ OO \\");
+        System.out.println("VV  VV");
+        System.out.println("!~~~~~!");
+        System.out.println("");
+        fightCard();
+        System.out.println("");
+        monsterIntro(1, "Dragon", 35);
+        archerFightSequence();
+
+    // Ending
+        System.out.println("");
+        System.out.println("You did it! A weakling like yourself actually managed to slay a dragon.");
+        System.out.println("Treasure glitters around the ruins… gold, gems, even dragon scales.");
+        System.out.println("You gather your loot and return to Roven Telia, exhausted but victorious.");
+        System.out.println("");
+        
+        System.out.println("At the castle, you report your journey and the King is impressed!");
+        System.out.println("The Princess claps with joy, her eyes sparkling!");
+        System.out.println("You're rewarded with heaps of gold, enough for generational wealth.");
+        
+        System.out.println("");
+        System.out.println("Later, while strolling through the streets, enjoying warm bread, you pass a beggar.");
+        System.out.println("You recognize him. The Knight.");
+        System.out.println("He mutters for spare coin, but you scoff and walk past.");
+        System.out.println("He didn't slay that dragon. You did.");
 
     } // END OF ARCHER STORY PATH
 
@@ -541,3 +658,4 @@ public class TalesofRovenTelia {
         input.close();
     }
 } //end of class
+
