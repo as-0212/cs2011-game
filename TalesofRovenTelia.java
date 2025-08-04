@@ -47,6 +47,11 @@ public class TalesofRovenTelia {
     }
 
     public static void askKnight() { //Gives brief description of Knight class.
+         System.out.println(" .  *  )");
+        System.out.println(" o  | )  ");
+        System.out.println(" |< +");
+        System.out.println("/ \\");
+        System.out.println("");
         System.out.println("\n--- The Knight ---");
         System.out.println("HP: 150");
         System.out.println("Items: 2 x Health potion");
@@ -55,6 +60,11 @@ public class TalesofRovenTelia {
     }
 
     public static void askArcher() { //Gives brief description of Archer class.
+        System.out.println("  ! ");
+        System.out.println("  o   ");
+        System.out.println("  |<}-> -> ->");
+        System.out.println(" / \\");
+        System.out.println("");
         System.out.println("\n--- The Archer ---");
         System.out.println("HP: 80");
         System.out.println("Items: 50x Arrow, 1x health potion");
@@ -63,6 +73,11 @@ public class TalesofRovenTelia {
     }
 
     public static void askMage() { //Gives brief description of Mage class.
+        System.out.println(" *    *");
+        System.out.println(" o   *");
+        System.out.println("/|\\/");
+        System.out.println("/ \\");
+        System.out.println("");
         System.out.println("\n--- The Mage ---");
         System.out.println("HP: 100");
         System.out.println("Mana: 75");
@@ -157,7 +172,7 @@ public class TalesofRovenTelia {
                         if (numHealthPotions < 0) {
                             numHealthPotions--;
                         System.out.println("Consumed 1 Health Potion. 35 HP restored.");
-                        hp += 35;
+                        hp += 50;
                         } else {
                             System.out.println("You have no more health potions.");
                         }
@@ -248,7 +263,7 @@ public class TalesofRovenTelia {
                         if (numHealthPotions > 0) {
                             numHealthPotions--;
                         System.out.println("Consumed 1 Health Potion. 35 HP restored.");
-                        hp += 35;
+                        hp += 50;
                         } else {
                             System.out.println("You are out of health potions.");
                         }
@@ -341,7 +356,7 @@ public class TalesofRovenTelia {
                         if (numHealthPotions > 0) {
                             numHealthPotions--;
                         System.out.println("Consumed 1 Health Potion. 35 HP restored.");
-                        hp += 35;
+                        hp += 50;
                         } else {
                             System.out.println("You are out of Health Potions.");
                         }
@@ -390,58 +405,70 @@ public class TalesofRovenTelia {
         
         System.out.println("");
 
-        System.out.println("You were once a well respected knight in the kingdom of Roven Telia, \n but after some controversy about you and the princess, you were banished and sent on a suicide mission. \nYou have to go to the old castle of Poachers Peak and slay the dragon in order to return to Roven Telia. \nYou were geared with your basic standard issue gear and some potions by some mage and sent into the forest.");
-        System.out.println("");
-        System.out.println("While strolling through the deadly forest you were ambushed by a group of Goblins. \nYou didn't speak their tongue but you could tell they wanted everything you had on you.");
-        System.out.println("");
+        System.out.println("You were once a respected knight in Roven Telia, but after a scandal with the princess, you were exiled.");
+        System.out.println("To earn redemption, you were tasked with a suicide mission: slay the dragon at Poachers Peak.");
+        System.out.println("Equipped with your sword and a few potions, you enter the dangerous forest.");
 
+        System.out.println("As you march deeper, a trio of ICE goblins leap from the shadows, snarling and pointing at your gear.");
         fightCard();
-
         System.out.println("");
-
-
-        monsterIntro(3, "Goblins", 18);
-
+        System.out.println("~o~     *   *");
+        System.out.println("/-\\ }->,|, *");
+        System.out.println("        + /");
         System.out.println("");
-
-        knightFightSequence();
-
-        fightCard();
-        System.out.println("Ambushed by 3 goblins.");
         monsterIntro(3, "Goblins", 18);
         knightFightSequence();
 
-        System.out.println("You continue on and face 2 giant beetles.");
+        System.out.println("Victorious but bruised, you wipe off goblin blood and move forward through the dense woods.");
+        System.out.println("Suddenly, two giant cockroaches creep out from the bushes, mandibles clicking hungrily.");
         fightCard();
-        monsterIntro(2, "Giant Beetles", 20);
+        System.out.println("");
+        System.out.println(" \\/  ");
+        System.out.println("\\oo/ ");
+        System.out.println("_||_ ");
+        System.out.println(" ()");
+        System.out.println("/  \\");
+        System.out.println("");
+        monsterIntro(2, "Giant Cockroaches", 20);
         knightFightSequence();
 
-        System.out.println("You rest by a boulder but are ambushed by 2 goblins riding beetles.");
+        System.out.println("You used up a lot of energy. You rest on a stone...");
+        System.out.println("But there's no time to relax! Goblins riding cockroaches charge!");
         fightCard();
-        monsterIntro(4, "Goblin Riders", 25);
+        monsterIntro(4, "Mounted Goblins", 25);
         knightFightSequence();
 
-        System.out.println("Before sleeping, 2 woodland elves approach and demand you leave.");
+        System.out.println("You push forward, limbs sore. Suddenly, two woodland elves confront you.");
+        System.out.println("They claim you're trespassing on sacred land.");
         fightCard();
-        monsterIntro(2, "Woodland Elves", 15);
+        System.out.println("");
+        System.out.println("^o^     *   *");
+        System.out.println("/-\\ }->,|, *");
+        System.out.println("        + /");
+        System.out.println("");
+        monsterIntro(2, "Woodland Elves", 18);
         knightFightSequence();
 
-        System.out.println("You rest and recover some health.");
-        hp += 40;
+        System.out.println("You slump under a tree and rest. HP restored by 50.");
+        hp += 50;
 
-        System.out.println("At Poachers Peak, the dragon lands before you.");
+        System.out.println("At dawn, you reach Poachers Peak. A massive dragon roars overhead and lands before you.");
         fightCard();
-        monsterIntro(1, "Dragon", 35);
+        System.out.println("");
+        System.out.println("  \\/ ");
+        System.out.println(" \\00/ ");
+        System.out.println("  ||");
+        System.out.println("/ OO \\");
+        System.out.println("VV  VV");
+        System.out.println("");
+        monsterIntro(1, "Dragon", 40);
         knightFightSequence();
 
-        System.out.println("You slayed the dragon and returned to Roven Telia.");
-        System.out.println("The princess ignores you. You live out your days as a forgotten knight.");
+        System.out.println("You've done the impossible. The dragon lies dead.");
+        System.out.println("You return to Roven Telia a hero... but the people look away.");
+        System.out.println("The King welcomes you, but the princess avoids your gaze.");
+        System.out.println("You live in the shadows, a warrior turned beggar.");
 
-
-
-
-
-    
     } //END OF KNIGHT STORY PATH
 
     //ARCHER STORY PATH ARCHER STORY PATH ARCHER STORY PATH ARCHER STORY PATH
